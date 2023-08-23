@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <header>
+    <img src="https://marista.edu.br/piox/wp-content/uploads/2021/02/Cole%CC%81gio-Marista-Padre-Eusta%CC%81quio_Azul-01-logo.png" width="25%" height="100%">
+  </header>
+  <div class="container">
+    <main>
+        <iframe id="Mensal" name="Calendar" frameborder="0" scrolling="no" src="https://indify.co/widgets/live/calendar/S8NiKnbRrZdyODRZH94q"></iframe>
+    </main>
+    <aside>
+        <div class="image-box">
+            <img src="./Imagens/imagem1.png" alt="Imagem 1" >
+            <img src="./Imagens/imagem2.png" alt="Imagem 2" >
+            <img src="./Imagens/imagem3.png" alt="Imagem 3" >
+            <img src="./Imagens/imagem4.png" alt="Imagem 4" >
+            <img src="./Imagens/imagem5.png" alt="Imagem 5" >
+            <img src="./Imagens/imagem6.png" alt="Imagem 6" >
+        </div>
+        <script>
+            const images = document.querySelectorAll('.image-box img');
+            let currentIndex = 0;
+            function showNextImage() {
+                images[currentIndex].style.opacity = '0';
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.opacity = '1';
+            }
+            setInterval(showNextImage, 3000); // Aqui você pode alterar o tempo em que a imagem fica rodando, a cada
+        </script>
+      <iframe id="Calendario" name="Calendar" frameborder="0" src="https://indify.co/widgets/live/calendar/QCdQpxzwWfUMupZdC3VU"></iframe>
+    </aside>
+  </div>
+</body>
+</html>
